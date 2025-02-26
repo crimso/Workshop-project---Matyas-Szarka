@@ -1,0 +1,50 @@
+/** Font family Raleway, Open Sans **/
+
+
+
+/* font-family: "Raleway",
+serif;
+font-optical-sizing: auto; */
+
+/*! 300, 400, 700, 800 !*/
+
+/* font-family: "Open Sans",
+serif;
+font-optical-sizing: auto; */
+
+/*! 300, 400, 700 !*/
+
+/** NAVIGATION SECTION **/
+
+.nav {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+}
+
+.nav_container {
+    max-width: 1350px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #08A6E4;
+}
+
+.nav_container p {
+    font-size: 2rem;
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+}
+
+.nav_list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav_list a {
+    color: #A5A5A5;
+    display: block;
+    text-decoration: none;
+    padding: 28px calc(95px /2);
+}
