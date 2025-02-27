@@ -1,6 +1,9 @@
 /** Font family Raleway, Open Sans **/
 
-
+:root {
+    --primary-font: "Open Sans", serif;
+    --secondary-font: "Raleway", serif;
+}
 
 /* font-family: "Raleway",
 serif;
@@ -14,12 +17,31 @@ font-optical-sizing: auto; */
 
 /*! 300, 400, 700 !*/
 
+a {
+    text-decoration: none;
+
+}
+
+p {
+    font-family: var(--primary-font);
+}
+
+.button {
+    font-family: var(--primary-font);
+    background-color: #08A6E4;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+
+
 /** NAVIGATION SECTION **/
 
 .nav {
     background-color: #FFFFFF;
     display: flex;
     justify-content: center;
+    box-shadow: 0 3px 6px #00000029;
 }
 
 .nav_container {
@@ -33,18 +55,78 @@ font-optical-sizing: auto; */
 
 .nav_container p {
     font-size: 2rem;
-    font-family: "Raleway", serif;
+    font-family: var(--secondary-font);
     font-optical-sizing: auto;
+    padding-block: calc((70px - 32px) / 2);
 }
 
 .nav_list {
     display: flex;
+    align-items: center;
     justify-content: space-around;
+    font-family: var(--primary-font);
+    font-optical-sizing: auto;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3.28px;
 }
+
 
 .nav_list a {
     color: #A5A5A5;
-    display: block;
+    display: inline-block;
     text-decoration: none;
-    padding: 28px calc(95px /2);
+    border-bottom: 4px solid transparent;
+    padding: 25px calc(95px /2);
+}
+
+
+.nav_list a:hover {
+    color: #000000;
+    cursor: pointer;
+    border-bottom: 4px solid #08A6E4;
+}
+
+/** OPENING Section **/
+
+
+.section_container {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section_container h1 {
+    font-size: 3.06rem;
+    text-align: center;
+    font-family: var(--secondary-font);
+}
+
+h1 {
+    margin: 130px 0 20px;
+}
+
+.heading_text {
+    margin-bottom: 38px;
+}
+
+.button {
+    font-size: 1rem;
+    padding: calc((67px - 16px) / 2) calc((440px - 120px) / 2);
+    border-radius: 40px;
+}
+
+/** MAIN Section - Statistics **/
+
+.statistics_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.statistics_section h2 {
+    margin-block: 100px;
 }

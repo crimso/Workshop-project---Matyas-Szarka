@@ -242,6 +242,13 @@ img {
     /* 2 */
 }
 
+/** Make images easier to work with **/
+picture,
+img {
+    max-width: 100%;
+    display: block;
+}
+
 /**
  * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
  */
