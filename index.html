@@ -58,15 +58,192 @@
       </section>
     </header>
     <main class="main">
-      <section class="statistics_section">
+      <section class="statistics">
         <h2>The most popular sales platform in country</h2>
         <div class="statistics_container">
-          <div class="person">
-            <div class="person_image">
+          <div class="statistic-info">
+            <div class="statistic-info__images statistic-info__first">
               <img src="./Workshop project/assets/Person.svg" alt="" />
             </div>
-            <p class="person_number">100000+</p>
-            <p class="person_info-text">daily entries</p>
+
+            <p class="statistic-info__numbers">100000+</p>
+            <p class="statistic-info__text">daily entries</p>
+          </div>
+
+          <div class="statistic-info">
+            <div class="statistic-info__images statistic-info__second">
+              <img src="./Workshop project/assets/Eye.svg" alt="" />
+            </div>
+
+            <p class="statistic-info__numbers">2000000+</p>
+            <p class="statistic-info__text">seen products every day</p>
+          </div>
+
+          <div class="statistic-info">
+            <div class="statistic-info__images statistic-info__third">
+              <img src="./Workshop project/assets/Catalog.svg" alt="" />
+            </div>
+
+            <p class="statistic-info__numbers">10000+</p>
+            <p class="statistic-info__text">added posts daily</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="benefits">
+        <div class="benefits__container">
+          <div class="benefits__post-first">
+            <article class="benefits__info-first">
+              <h2 class="benefits__heading-first post-headings">
+                Be always first
+              </h2>
+              <p class="benefits__text-first">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam.
+              </p>
+            </article>
+            <div class="benefits__image-first">
+              <img
+                src="./Workshop project/assets/Macbook.png"
+                alt=""
+                width="380"
+                height="219"
+              />
+            </div>
+          </div>
+          <div class="benefits__post-second">
+            <div class="benefits__image-second">
+              <img
+                src="./Workshop project/assets/iPhone.png"
+                alt=""
+                width="426"
+                height="328"
+              />
+            </div>
+            <article class="benefits__info-second">
+              <h2 class="benefits__heading-second post-headings">
+                Your shop is<br />where you are!
+              </h2>
+              <p class="benefits__text-second">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam..
+              </p>
+            </article>
+          </div>
+          <div class="double-items">
+            <div class="benefits__post-third">
+              <article class="benefits__info-third">
+                <h2 class="benefits__heading-third post-headings">
+                  Increase recognition<br />your brand!
+                </h2>
+                <p class="benefits__text-third">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam..
+                </p>
+              </article>
+            </div>
+            <div class="benefits__image-third">
+              <img
+                src="./Workshop project/assets/Trumpet.png"
+                alt=""
+                width="295"
+                height="207"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pricing">
+        <div class="pricing-title-container">
+          <h2 class="title">Pricing</h2>
+          <div class="pricing__container">
+            <div class="pricing__basic pricing-common">
+              <h3 class="pricing__title title-common">Basic</h3>
+              <p class="pricing__price-basic price-common pricing-basic">$0</p>
+
+              <ul class="pricing__list-basic list-common">
+                <li>100 MB HDD</li>
+                <li>1 Subdomain</li>
+                <li>2 E-mails</li>
+                <li>Two years license</li>
+                <li>Full support</li>
+              </ul>
+              <a href="#" class="button__pricing-common button-basic">Begin</a>
+            </div>
+
+            <div class="pricing__professional pricing-common">
+              <h3 class="pricing__title title-common">Professional</h3>
+              <p class="pricing__price-professional price-common">$25</p>
+              <p class="limited limited-professional">Limited offer</p>
+              <ul class="pricing__list-professional list-common">
+                <li>500 MB HDD</li>
+                <li>2 Subdomains</li>
+                <li>5 E-mails</li>
+                <li>One year license</li>
+                <li>Full support</li>
+              </ul>
+              <a href="#" class="button__pricing-common button-professional"
+                >Begin</a
+              >
+            </div>
+
+            <div class="pricing__premium pricing-common">
+              <h3 class="pricing__title title-common">Premium</h3>
+              <p class="pricing__price-premium price-common">$60</p>
+              <p class="limited">Limited offer</p>
+              <ul class="pricing__list-premium list-common">
+                <li>2 GB HDD</li>
+                <li>5 Subdomains</li>
+                <li>20 E-mails</li>
+                <li>Two years license</li>
+                <li>Full support</li>
+              </ul>
+              <a href="#" class="button__pricing-common button-premium"
+                >Begin</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="contact-container">
+          <div class="contact-text">
+            <h2>Any questions?</h2>
+            <p>Leave your email address or call us!</p>
+            <div class="contact-information">
+              <p class="contact-info-email contact-info-common">info@bestshop.xyz</p>
+              <p class="contact-info-phone contact-info-common">123 456 789</p>
+            </div>
+          </div>
+          <div class="form-container">
+            <form class="form-main" action="">
+              <div class="form-name">
+                <label for="name">name</label>
+                <input type="text" name="name" id="name" />
+              </div>
+              <div class="form-email">
+                <label for="email">email</label>
+                <input type="text" name="email" id="email" />
+              </div>
+            </form>
+            <div class="checkbox-container">
+              <input type="checkbox" name="gdpr" id="gdpr" />
+              <label for="gdpr"
+                >I hereby give consent for my personal data included in my
+                application to be processed for the purposes of the recruitment
+                process under the European Parliament’s and Council of the
+                European Union Regulation on the Protection of Natural Persons as
+                of 27 April 2016, with regard to the processing of personal data
+                and on the free movement of such data, and repealing Directive
+                95/46/EC (Data Protection Directive)</label
+              >
+            </div>
+            <a href="#">Send</a>
           </div>
         </div>
       </section>
