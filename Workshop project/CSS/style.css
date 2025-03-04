@@ -37,7 +37,6 @@ p {
 }
 
 
-
 /** HEADER SECTION **/
 
 header {
@@ -117,9 +116,6 @@ h1 {
     margin-bottom: 38px;
 }
 
-/* TODO: make the button common to the whole site */
-/*! ----------*/
-
 .button {
     font-size: 1rem;
     padding: calc((67px - 16px) / 2) calc((440px - 120px) / 2);
@@ -151,13 +147,11 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: #aee6a8; */
     padding: 20px;
     flex: 1;
 }
 
 .statistic-info {
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -221,7 +215,6 @@ h1 {
 }
 
 .benefits__post-first {
-
     margin: 105px 0 37px 0;
     padding: 20px 20px 20px 35px;
     border-radius: 5px;
@@ -429,6 +422,7 @@ h1 {
     margin-bottom: 30px;
 }
 
+
 .pricing-common {
     width: 100%;
     max-width: 372px;
@@ -437,7 +431,15 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content:flex-start; */
+    justify-content: center;
+}
+
+.pricing__professional-container {
+    margin-block: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .pricing__basic {
@@ -449,7 +451,6 @@ h1 {
     max-width: 405px;
     border: 1px solid var(--primary-color);
     box-shadow: 5px 10px 27px #07ACE629;
-
 }
 
 .pricing__premium {
@@ -460,10 +461,6 @@ h1 {
     font-family: var(--secondary-font);
     font-size: 0.8125rem;
     font-weight: 700;
-}
-
-.limited-professional {
-    margin-bottom: 30px;
 }
 
 .pricing__title {
@@ -503,7 +500,7 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start;
     font-family: var(--primary-font);
     font-size: 0.875rem;
     line-height: 3.5;
@@ -566,6 +563,7 @@ h1 {
     width: 100%;
     max-width: 896px;
     margin-top: 150px;
+    margin-bottom: 59px;
     margin-inline: auto;
     display: flex;
     justify-content: space-between;
@@ -612,7 +610,6 @@ h1 {
     content: url(../assets/Phone\ Icon.svg);
 }
 
-
 .form-container {
     width: 100%;
     max-width: 440px;
@@ -655,7 +652,69 @@ h1 {
     margin-bottom: 20px;
 }
 
-.checkbox-container input {
-    width: 50px;
-    height: 50px;
+.checkbox-container img {
+    width: 24px;
+    height: 24px;
+    padding: 6px;
+    border: 1px solid #95989A;
+    border-radius: 4px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button-contact {
+    width: 100%;
+    max-width: 226px;
+    text-align: center;
+    background-color: var(--primary-color);
+    transform: translateY(0);
+    padding-block: calc((57px - 13px) / 2);
+}
+
+/** ----- FOOTER SECTION ----- **/
+
+.footer {
+    box-shadow: 0 -5px 40px #00000029;
+}
+
+.footer-container {
+    width: 100%;
+    max-width: 1352px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.footer-images {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-images img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-logo {
+    font-family: var(--secondary-font);
+    font-size: 1.625rem;
+    color: var(--primary-color);
+    margin-top: 20px;
+}
+
+.footer-rights {
+    font-family: var(--primary-font);
+    font-size: 0.6875rem;
+    margin: 10px 0 17px 0;
 }
