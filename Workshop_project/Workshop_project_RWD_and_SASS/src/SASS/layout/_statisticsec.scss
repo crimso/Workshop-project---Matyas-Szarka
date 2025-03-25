@@ -1,0 +1,74 @@
+.statistics {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .statistics h2 {
+    padding: 20px;
+    font-family: var(--secondary-font);
+    font-size: 2.25rem;
+    text-align: center;
+  }
+  
+  .statistics_container {
+    max-width: 830px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex: 1;
+  }
+  
+  .statistic-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .statistic-info p {
+    font-family: var(--secondary-font);
+  }
+  
+  .statistic-info__images {
+    width: 63px;
+    height: 63px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .statistic-info__images img {
+    transform: translateX(30%);
+  }
+  
+  .statistic-info__first {
+    background: var(--secondary-color);
+  }
+  
+  .statistic-info__second {
+    background-color: var(--primary-color);
+  }
+  
+  .statistic-info__third {
+    background-color: var(--third-color);
+  }
+  
+  .statistic-info__numbers {
+    padding-block: 30px;
+    font-weight: 800;
+    font-size: 1.25rem;
+    letter-spacing: 5.96px;
+  }
+  
+  .statistic-info__text {
+    font-size: 1.0625rem;
+    color: #A5A5A5;
+  }

@@ -1,0 +1,20 @@
+@mixin mobile {
+    @media (max-width: 375px) {
+        
+        @content;
+    }
+        
+}
+
+@mixin mobile-padding {
+    @media (max-width: 375px) {
+        padding-inline: 15px;
+        @content;
+    }
+}
+
+@mixin mobile-tablet {
+    @media (min-width: 375px) and (max-width: 900px){
+        @content;
+    }
+}

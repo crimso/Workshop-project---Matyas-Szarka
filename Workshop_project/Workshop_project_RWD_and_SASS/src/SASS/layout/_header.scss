@@ -1,0 +1,77 @@
+@use "../abstracts/mixins" as mixins;
+@use "../abstracts/variables" as variables;
+
+header {
+    height: 100vh;
+    
+  }
+  
+  .nav {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    box-shadow: variables.$primary-box-shadow;
+
+    @include mixins.mobile {
+      
+    }
+
+  }
+  
+  .nav_container {
+    max-width: 1350px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: variables.$primary-color;
+    
+    @include mixins.mobile {
+
+    }
+  }
+  
+  .nav_container p {
+    font-size: 2rem;
+    font-family: variables.$secondary-font;
+    font-optical-sizing: auto;
+    padding-block: calc((70px - 32px) / 2);
+
+    @include mixins.mobile-padding {
+      
+    }
+
+  }
+  
+  .nav_list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: variables.$primary-font;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 3.28px;
+    gap: 6.126rem;
+
+    @include mixins.mobile {
+      display: none;
+    }
+
+    
+  }
+  
+  .nav_list a {
+    color: #A5A5A5;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 4px solid transparent;
+    padding: 27px calc(10px /2);
+  }
+  
+  .nav_list a:hover {
+    color: #000000;
+    cursor: pointer;
+    border-bottom: 4px solid variables.$primary-color;
+  }

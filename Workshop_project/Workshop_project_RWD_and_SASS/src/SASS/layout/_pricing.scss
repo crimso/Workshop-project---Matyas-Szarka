@@ -1,0 +1,159 @@
+.pricing-title-container {
+    width: 100%;
+    max-width: 1266px;
+    margin-top: 100px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .pricing__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .pricing h2 {
+    font-family: var(--secondary-font);
+    font-size: 2.25rem;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  
+  
+  .pricing-common {
+    width: 100%;
+    max-width: 372px;
+    padding: 15px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .pricing__professional-container {
+    margin-block: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .pricing__basic {
+    border: 1px solid var(--secondary-color);
+  }
+  
+  .pricing__professional {
+    width: 100%;
+    max-width: 405px;
+    border: 1px solid var(--primary-color);
+    box-shadow: 5px 10px 27px #07ACE629;
+  }
+  
+  .pricing__premium {
+    border: 1px solid var(--third-color);
+  }
+  
+  .limited {
+    font-family: var(--secondary-font);
+    font-size: 0.8125rem;
+    font-weight: 700;
+  }
+  
+  .pricing__title {
+    font-family: var(--secondary-font);
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1;
+    margin-top: 14px;
+  }
+  
+  .pricing-basic {
+    margin-bottom: 13px;
+  }
+  
+  .price-common {
+    font-family: var(--primary-font);
+    font-size: 2.875rem;
+    font-weight: 200;
+    line-height: 2;
+  }
+  
+  .pricing__price-basic {
+    color: var(--secondary-color);
+  }
+  
+  .pricing__price-professional {
+    color: var(--primary-color);
+  }
+  
+  .pricing__price-premium {
+    color: var(--third-color)
+  }
+  
+  .pricing__list,
+  .list-common {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: var(--primary-font);
+    font-size: 0.875rem;
+    line-height: 3.5;
+    position: relative;
+  }
+  
+  .list-common li::before {
+    margin-right: 10px;
+    width: 11px;
+    height: 11px;
+  }
+  
+  .pricing__list-basic li:nth-child(-n+3)::before {
+    content: url(../assets/Checkmark-2.svg);
+  }
+  
+  .pricing__list-basic li:nth-last-child(-n+2)::before {
+    content: url(../assets/Close.svg);
+  }
+  
+  .pricing__list-professional li:nth-child(-n+4)::before {
+    content: url(../assets/Checkmark-2.svg);
+  }
+  
+  .pricing__list-professional li:last-child::before {
+    content: url(../assets/Close.svg);
+  }
+  
+  .pricing__list-premium li::before {
+    content: url(../assets/Checkmark-2.svg);
+  }
+  
+  
+  .button__pricing-common {
+    font-family: var(--primary-font);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: white;
+    padding: 16px 57px;
+    border-radius: 50px;
+    transform: translateY(85%);
+  }
+  
+  .button-basic {
+    background-color: var(--secondary-color);
+  }
+  
+  .button-professional {
+    background-color: var(--primary-color);
+    box-shadow: 5px 10px 14 #07ACE629;
+  }
+  
+  .button-premium {
+    background-color: var(--third-color);
+  }

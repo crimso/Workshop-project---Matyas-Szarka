@@ -1,0 +1,49 @@
+@use "../abstracts/mixins" as mixins;
+@use "../abstracts/variables" as variables;
+@use "sass:math";
+@use "../components/buttons" as buttons;
+
+
+.section_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include mixins.mobile-padding {
+
+    }
+
+    h1 {
+      margin: 130px 0 20px;
+      font-size: 3.06rem;
+      text-align: center;
+      font-family: variables.$secondary-font;
+
+      @include mixins.mobile {
+        font-size: math.div(35px, 16px) * 1rem;
+      }
+    }
+    .heading_text {
+      margin-bottom: 38px;
+
+      @include mixins.mobile {
+        text-align: center;
+        padding-inline: 20px;
+        
+      }
+
+    }
+  }
+      
+.banner {
+  
+  @include mixins.mobile {
+    display: none;
+    background-image: url("/src/assets/Background.png");
+    
+  }
+}
+
+  
+  

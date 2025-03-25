@@ -1,0 +1,15 @@
+@use "../abstracts/mixins" as mixins;
+
+.button {
+    font-size: 1rem;
+    padding: calc((67px - 16px) / 2) calc((440px - 120px) / 2);
+    border-radius: 40px;
+
+    @include mixins.mobile {
+        width: 100%;
+        padding-inline: 10px;
+        text-align: center;
+    } 
+    
+    }
+

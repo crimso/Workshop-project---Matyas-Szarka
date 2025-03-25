@@ -1,0 +1,39 @@
+//**** FONTS ****//
+
+$primary-font: "Open Sans", serif;
+$secondary-font: "Raleway", serif;
+
+//**** COLORS ****//
+
+$primary-color: #08A6E4;
+$secondary-color: #FB3B64;
+$third-color: #55DFB4;
+
+//**** BOX SHADOWS ****//
+
+$primary-box-shadow: 0 3px 6px #00000029;
+
+
+
+
+
+
+
+
+
+
+    // --primary-font: "Open Sans", serif;
+    // --secondary-font: "Raleway", serif;
+    // --primary-color: #08A6E4;
+    // --secondary-color: #FB3B64;
+    // --third-color: #55DFB4;
+
+//**** TYPHOGRAPHY ****//
+
+$fs-sm: clamp(0.8rem, 2.15vi + 0.32rem, 2.25rem);
+$fs-base: clamp(1rem, 2.96vi + 0.33rem, 3rem);
+$fs-md: clamp(1.25rem, 4.07vi + 0.33rem, 4rem);
+$fs-lg: clamp(1.56rem, 5.58vi + 0.31rem, 5.33rem);
+$fs-xl: clamp(1.95rem, 7.63vi + 0.24rem, 7.11rem);
+$fs-xxl: clamp(2.44rem, 10.42vi + 0.1rem, 9.47rem);
+$fs-xxxl: clamp(3.05rem, 14.18vi + -0.14rem, 12.63rem);
