@@ -1,27 +1,44 @@
+@use "/src/SASS/abstracts/mixins";
+@use "../abstracts/variables";
+
 .statistics {
-    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-block: 50px;
+
+    @include mixins.mobile-tablet {
+      padding: 20px 15px;
+  }
+
   }
   
   .statistics h2 {
-    padding: 20px;
-    font-family: var(--secondary-font);
+    padding-block: 20px;
+    font-family: variables.$secondary-font;
     font-size: 2.25rem;
     text-align: center;
+
+    @include mixins.mobile {
+      font-size: 1.875rem;
+    }
+
   }
   
   .statistics_container {
     max-width: 830px;
     width: 100%;
-    text-align: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    flex: 1;
+
+    @include mixins.mobile-padding {
+      flex-direction: column;
+      gap: 25px;
+      padding: 20px 15px;
+    }
   }
   
   .statistic-info {
@@ -32,43 +49,41 @@
     flex-wrap: wrap;
   }
   
-  .statistic-info p {
-    font-family: var(--secondary-font);
-  }
-  
   .statistic-info__images {
-    width: 63px;
-    height: 63px;
-    border-radius: 50px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  
-  .statistic-info__images img {
-    transform: translateX(30%);
+    @include mixins.statistic-info-images {
+    }
   }
   
   .statistic-info__first {
-    background: var(--secondary-color);
+    background: variables.$secondary-color;
   }
   
   .statistic-info__second {
-    background-color: var(--primary-color);
+    background-color: variables.$primary-color;
   }
   
   .statistic-info__third {
-    background-color: var(--third-color);
-  }
+    background-color: variables.$third-color;
+  } 
   
   .statistic-info__numbers {
-    padding-block: 30px;
+    margin-block: 30px;
     font-weight: 800;
     font-size: 1.25rem;
     letter-spacing: 5.96px;
+
+    p {
+      font-family: variables.$secondary-font;
+    }
+
   }
   
   .statistic-info__text {
     font-size: 1.0625rem;
     color: #A5A5A5;
+
+    p {
+      font-family: variables.$secondary-font;
+    }
+
   }

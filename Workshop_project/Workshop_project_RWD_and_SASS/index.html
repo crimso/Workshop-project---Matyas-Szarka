@@ -13,6 +13,10 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/23b2c2a94d.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -32,6 +36,9 @@
             <li><a href="#">Prices</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
+          <div class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+          </div>
         </div>
       </nav>
       <section class="opening-section">
@@ -41,7 +48,13 @@
             Open shop on our platform and increase your sales
           </p>
           <a href="#" class="button">Open your shop</a>
-          <img class="banner" src="./src/assets/Background.png" alt="" />
+          <picture>
+            <source
+              media="(max-width: 467px)"
+              srcset="./src/assets/Background.png"
+            />
+            <img class="banner" src="./src/assets/Background@2x.png" alt="" />
+          </picture>
         </div>
       </section>
     </header>
@@ -92,12 +105,35 @@
               </p>
             </article>
             <div class="benefits__image-first">
-              <img src="./src/assets/Macbook.png" alt="" width="380" height="219" />
+              <picture>
+                <source
+                  media="(max-width: 467px)"
+                  srcset="./src/assets/Macbook2.png"
+                  width="192px"
+                  height="110px"
+                />
+
+                <img
+                  src="./src/assets/Macbook.png"
+                  alt=""
+                  width="380"
+                  height="219"
+                />
+              </picture>
             </div>
           </div>
           <div class="benefits__post-second">
             <div class="benefits__image-second">
-              <img src="./src/assets/iPhone.png" alt="" width="426" height="328" />
+              <picture>
+                <source media="(max-width: 467px )" srcset="./src/assets/iPhone2.png">
+
+                <img
+                  src="./src/assets/iPhone.png"
+                  alt=""
+                  width="426"
+                  height="328"
+                />
+              </picture>
             </div>
             <article class="benefits__info-second">
               <h2 class="benefits__heading-second post-headings">
@@ -124,7 +160,12 @@
               </article>
             </div>
             <div class="benefits__image-third">
-              <img src="./src/assets/Trumpet.png" alt="" width="295" height="207" />
+              <img
+                src="./src/assets/Trumpet.png"
+                alt=""
+                width="295"
+                height="207"
+              />
             </div>
           </div>
         </div>

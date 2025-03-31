@@ -1,5 +1,5 @@
 @mixin mobile {
-    @media (max-width: 375px) {
+    @media (max-width: 467px) {
         
         @content;
     }
@@ -7,14 +7,28 @@
 }
 
 @mixin mobile-padding {
-    @media (max-width: 375px) {
+    @media (max-width: 467px) {
         padding-inline: 15px;
         @content;
     }
 }
 
 @mixin mobile-tablet {
-    @media (min-width: 375px) and (max-width: 900px){
+    @media (min-width: 467px) and (max-width: 741px){
         @content;
     }
+}
+
+@mixin statistic-info-images {
+    width: 63px;
+    height: 63px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    img {
+        transform: translateX(30%);
+    }
+        @content;
 }
