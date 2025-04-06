@@ -50,10 +50,16 @@
           <a href="#" class="button">Open your shop</a>
           <picture>
             <source
-              media="(max-width: 467px)"
-              srcset="./src/assets/Background.png"
+              media="(min-width: 467px)"
+              srcset="./src/assets/Background@2x.png"
             />
-            <img class="banner" src="./src/assets/Background@2x.png" alt="" />
+            <img
+              class="banner"
+              src="./src/assets/Background.png"
+              width="779px"
+              height="267px"
+              alt="computer picture"
+            />
           </picture>
         </div>
       </section>
@@ -125,14 +131,12 @@
           <div class="benefits__post-second">
             <div class="benefits__image-second">
               <picture>
-                <source media="(max-width: 467px )" srcset="./src/assets/iPhone2.png">
-
-                <img
-                  src="./src/assets/iPhone.png"
-                  alt=""
-                  width="426"
-                  height="328"
+                <source
+                  media="(max-width: 467px )"
+                  srcset="./src/assets/iPhone2.png"
                 />
+
+                <img src="./src/assets/iPhone.png" alt="" width="426" />
               </picture>
             </div>
             <article class="benefits__info-second">
@@ -176,24 +180,32 @@
           <h2 class="title">Pricing</h2>
           <div class="pricing__container">
             <div class="pricing__basic pricing-common">
-              <h3 class="pricing__title title-common">Basic</h3>
-              <p class="pricing__price-basic price-common pricing-basic">$0</p>
+              <div class="article__wrapper">
+                <article class="title__text">
+                  <h3 class="pricing__title title-common">Basic</h3>
+                  <p class="pricing__price-basic price-common pricing-basic">
+                    $0
+                  </p>
+                </article>
+                <ul class="pricing__list-basic list-common">
+                  <li>100 MB HDD</li>
+                  <li>1 Subdomain</li>
+                  <li>2 E-mails</li>
+                  <li>Two years license</li>
+                  <li>Full support</li>
+                </ul>
+              </div>
 
-              <ul class="pricing__list-basic list-common">
-                <li>100 MB HDD</li>
-                <li>1 Subdomain</li>
-                <li>2 E-mails</li>
-                <li>Two years license</li>
-                <li>Full support</li>
-              </ul>
               <a href="#" class="button__pricing-common button-basic">Begin</a>
             </div>
 
             <div class="pricing__professional pricing-common">
               <div class="pricing__professional-container">
-                <h3 class="pricing__title title-common">Professional</h3>
-                <p class="pricing__price-professional price-common">$25</p>
-                <p class="limited">Limited offer</p>
+                <article class="title__text">
+                  <h3 class="pricing__title title-common">Professional</h3>
+                  <p class="pricing__price-professional price-common">$25</p>
+                  <p class="limited">Limited offer</p>
+                </article>
                 <ul class="pricing__list-professional list-common">
                   <li>500 MB HDD</li>
                   <li>2 Subdomains</li>
@@ -209,16 +221,20 @@
             </div>
 
             <div class="pricing__premium pricing-common">
-              <h3 class="pricing__title title-common">Premium</h3>
-              <p class="pricing__price-premium price-common">$60</p>
-              <p class="limited">Limited offer</p>
-              <ul class="pricing__list-premium list-common">
-                <li>2 GB HDD</li>
-                <li>5 Subdomains</li>
-                <li>20 E-mails</li>
-                <li>Two years license</li>
-                <li>Full support</li>
-              </ul>
+              <div class="article__wrapper">
+                <article class="title__text">
+                  <h3 class="pricing__title title-common">Premium</h3>
+                  <p class="pricing__price-premium price-common">$60</p>
+                  <p class="limited">Limited offer</p>
+                </article>
+                <ul class="pricing__list-premium list-common">
+                  <li>2 GB HDD</li>
+                  <li>5 Subdomains</li>
+                  <li>20 E-mails</li>
+                  <li>Two years license</li>
+                  <li>Full support</li>
+                </ul>
+              </div>
               <a href="#" class="button__pricing-common button-premium"
                 >Begin</a
               >

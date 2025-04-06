@@ -8,6 +8,10 @@
     align-items: center;
     padding-block: 50px;
 
+    @include mixins.mobile-padding {
+      
+    }
+
     @include mixins.mobile-tablet {
       padding: 20px 15px;
   }

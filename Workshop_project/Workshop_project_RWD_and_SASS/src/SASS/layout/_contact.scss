@@ -1,3 +1,6 @@
+@use "../abstracts/variables" as variables;
+@use "../abstracts/mixins" as mixins;
+
 .contact-container {
     width: 100%;
     max-width: 896px;
@@ -6,26 +9,59 @@
     margin-inline: auto;
     display: flex;
     justify-content: space-between;
+
+    @include mixins.mobile-tablet {
+      flex-direction: column;
+      padding-inline: 20px;
+      align-items: center;
+    }
+    @include mixins.mobile {
+      flex-direction: column;
+      padding-inline: 20px;
+      align-items: flex-start;
+    }
+
+
   }
   
-  .contact-text h2 {
-    font-family: var(--secondary-font);
-    font-size: 3.0625rem;
-    margin-bottom: 22px;
-  }
-  
-  .contact-text p {
-    font-family: var(--primary-font);
-    font-size: 1rem;
-    margin-bottom: 42px;
-    font-weight: 500;
-  }
+  .contact-text {
+
+    h2 {
+      font-family: variables.$secondary-font;
+      font-size: 3.0625rem;
+      margin-bottom: 22px;
+    }
+
+    p {
+      font-family: variables.$primary-font;
+      font-size: 1rem;
+      margin-bottom: 42px;
+      font-weight: 500;
+    }
+    @include mixins.mobile-tablet {
+      text-align: center;
+      
+    }
+
+
+  } 
+    
   
   .contact-information {
     display: flex;
     justify-content: space-between;
-    font-family: var(--primary-font);
+    font-family: variables.$primary-font;
     color: #A5A5A5;
+
+    @include mixins.mobile-tablet {
+      flex-direction: column;
+      justify-content: baseline;
+    }
+
+    @include mixins.mobile {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
   
   .contact-info-common {
@@ -59,8 +95,8 @@
     flex-direction: column;
     gap: 42px;
     text-transform: uppercase;
-    font-family: var(--primary-font);
-    color: var(--primary-color);
+    font-family: variables.$primary-font;
+    color: variables.$primary-color;
     font-weight: 700;
     font-size: 0.6875rem;
     margin-bottom: 30px;
@@ -82,7 +118,7 @@
   }
   
   .checkbox-container {
-    font-family: var(--primary-font);
+    font-family: variables.$primary-font;
     color: #707070;
     font-size: 0.75rem;
     display: flex;
@@ -108,7 +144,7 @@
     width: 100%;
     max-width: 226px;
     text-align: center;
-    background-color: var(--primary-color);
+    background-color: variables.$primary-color;
     transform: translateY(0);
     padding-block: calc((57px - 13px) / 2);
   }

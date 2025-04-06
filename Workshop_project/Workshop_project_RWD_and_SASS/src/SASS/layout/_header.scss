@@ -8,7 +8,7 @@
     box-shadow: variables.$primary-box-shadow;
 
     @include mixins.mobile-tablet {
-      padding-left: 15px;
+      // padding-left: 15px;
     }
   }
   
@@ -72,7 +72,6 @@
     display: block;
     font-size: 1.5rem;
     color: variables.$primary-color;
-    padding-right: 15px;
   }
   
 }

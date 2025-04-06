@@ -10,8 +10,10 @@
     justify-content: center;
     align-items: center;
 
+    @include mixins.mobile-tablet {
+      padding-inline: 15px;
+    }
     @include mixins.mobile-padding {
-  
     }
 
     h1 {
@@ -32,14 +34,14 @@
         padding-inline: 20px;
         
       }
-
     }
   }
       
 .banner {
   
   @include mixins.mobile {
-    
+    max-width: auto;
+    height: auto;
   }
 }
 

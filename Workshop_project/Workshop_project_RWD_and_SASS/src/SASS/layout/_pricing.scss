@@ -1,5 +1,8 @@
+@use "../abstracts/mixins" as mixins;
+@use "../abstracts/variables" as variables;
+
 .pricing-title-container {
-    width: 100%;
+    width: auto;
     max-width: 1266px;
     margin-top: 100px;
     margin-inline: auto;
@@ -7,6 +10,18 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+
+    @include mixins.mobile-tablet {
+      padding-inline: 15px;
+      margin-top: 50px;
+
+    }
+
+    @include mixins.mobile {
+      padding-inline: 15px;
+      margin-top: 50px;
+    }
+
   }
   
   .pricing__container {
@@ -14,10 +29,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include mixins.mobile-tablet {
+      flex-direction: column;
+      gap:40px
+    }
+
+    @include mixins.mobile {
+      flex-direction: column;
+      gap:40px
+    }
+
   }
   
   .pricing h2 {
-    font-family: var(--secondary-font);
+    font-family: variables.$secondary-font;
     font-size: 2.25rem;
     padding: 20px;
     margin-bottom: 30px;
@@ -33,6 +59,28 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @include mixins.mobile {
+      // max-width: 100%;
+    }
+  }
+
+  .article__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .title__text {
+      text-align: center;
+    }
+
+    @include mixins.mobile {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items:center;
+    }
   }
   
   .pricing__professional-container {
@@ -41,31 +89,39 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+
+    @include mixins.mobile {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items:center;
+    }
   }
   
   .pricing__basic {
-    border: 1px solid var(--secondary-color);
+    border: 1px solid variables.$secondary-color;
   }
   
   .pricing__professional {
     width: 100%;
     max-width: 405px;
-    border: 1px solid var(--primary-color);
+    border: 1px solid variables.$primary-color;
     box-shadow: 5px 10px 27px #07ACE629;
   }
   
   .pricing__premium {
-    border: 1px solid var(--third-color);
+    border: 1px solid variables.$third-color;
   }
   
   .limited {
-    font-family: var(--secondary-font);
+    font-family: variables.$secondary-font;
     font-size: 0.8125rem;
     font-weight: 700;
   }
   
   .pricing__title {
-    font-family: var(--secondary-font);
+    font-family: variables.$secondary-font;
     font-size: 1.25rem;
     font-weight: 600;
     line-height: 1;
@@ -77,58 +133,64 @@
   }
   
   .price-common {
-    font-family: var(--primary-font);
+    font-family: variables.$secondary-font;
     font-size: 2.875rem;
     font-weight: 200;
     line-height: 2;
   }
   
   .pricing__price-basic {
-    color: var(--secondary-color);
+    color: variables.$secondary-color
   }
   
   .pricing__price-professional {
-    color: var(--primary-color);
+    color: variables.$primary-color;
   }
   
   .pricing__price-premium {
-    color: var(--third-color)
+    color: variables.$third-color;
   }
   
-  .pricing__list,
+  
   .list-common {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    font-family: var(--primary-font);
-    font-size: 0.875rem;
-    line-height: 3.5;
-    position: relative;
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      font-family: variables.$secondary-font;
+      font-size: 0.875rem;
+      line-height: 3.5;
+      position: relative;
+
+      li {
+        &::before {
+          margin-right: 10px;
+          width: 11px;
+          height: 11px;
+      }
+    }
   }
   
-  .list-common li::before {
-    margin-right: 10px;
-    width: 11px;
-    height: 11px;
+  .pricing__list-basic {
+    li:nth-child(-n+3)::before {
+      content: url(../assets/Checkmark-2.svg);
+    }
+    li:nth-last-child(-n+2)::before {
+        content: url(../assets/Close.svg);
+    }
   }
+
+  .pricing__list-professional {
+    li:nth-child(-n+4)::before {
+      content: url(../assets/Checkmark-2.svg);
+    }
+    li:last-child::before {
+      content: url(../assets/Close.svg);
+    }
+  } 
   
-  .pricing__list-basic li:nth-child(-n+3)::before {
-    content: url(../assets/Checkmark-2.svg);
-  }
   
-  .pricing__list-basic li:nth-last-child(-n+2)::before {
-    content: url(../assets/Close.svg);
-  }
-  
-  .pricing__list-professional li:nth-child(-n+4)::before {
-    content: url(../assets/Checkmark-2.svg);
-  }
-  
-  .pricing__list-professional li:last-child::before {
-    content: url(../assets/Close.svg);
-  }
   
   .pricing__list-premium li::before {
     content: url(../assets/Checkmark-2.svg);
@@ -136,7 +198,7 @@
   
   
   .button__pricing-common {
-    font-family: var(--primary-font);
+    font-family: variables.$primary-font;
     font-size: 0.8125rem;
     font-weight: 600;
     color: white;
@@ -146,14 +208,14 @@
   }
   
   .button-basic {
-    background-color: var(--secondary-color);
+    background-color: variables.$secondary-color;
   }
   
   .button-professional {
-    background-color: var(--primary-color);
+    background-color: variables.$primary-color;
     box-shadow: 5px 10px 14 #07ACE629;
   }
   
   .button-premium {
-    background-color: var(--third-color);
+    background-color: variables.$third-color;
   }
